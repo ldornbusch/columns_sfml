@@ -1,13 +1,7 @@
 // ColumnsStones.h: Schnittstelle für die Klasse ColumnsStones.
 //
 //////////////////////////////////////////////////////////////////////
-
-#if !defined(AFX_FALLINGSTONES_H__0E14D9BD_2FF0_4265_95EC_4F2771593FB0__INCLUDED_)
-#define AFX_FALLINGSTONES_H__0E14D9BD_2FF0_4265_95EC_4F2771593FB0__INCLUDED_
-
-#if _MSC_VER > 1000
 #pragma once
-#endif // _MSC_VER > 1000
 
 #include "../game/GameImageCloner.h"
 #include "../Game/GameStone.h"
@@ -71,5 +65,3 @@ private:
 	int  iXSpeed;			// The Offset which is added to the actual XCoord
 	int  iLevel;			// The Offset which is added to the actual XCoord
 };
-
-#endif // !defined(AFX_FALLINGSTONES_H__0E14D9BD_2FF0_4265_95EC_4F2771593FB0__INCLUDED_)

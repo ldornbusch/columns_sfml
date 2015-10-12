@@ -1,13 +1,7 @@
 // ColumnsGame.h: Schnittstelle für die Klasse ColumnsGame.
 // Enthält die gesamte Funktionalität und GameLogik
 //////////////////////////////////////////////////////////////////////
-
-#if !defined(AFX_COLUMNSGAME_H__2F4361A4_EE7F_11D5_B047_00E098802DF2__INCLUDED_)
-#define AFX_COLUMNSGAME_H__2F4361A4_EE7F_11D5_B047_00E098802DF2__INCLUDED_
-
-#if _MSC_VER > 1000
 #pragma once
-#endif // _MSC_VER > 1000
 
 #include "../game/GameImageCloner.h"
 #include "../All2DEngine/All2D/All2D_Sprites/UIElement.h"
@@ -59,5 +53,3 @@ private:
 	ColumnsPit Pit;
 	ColumnsBackGround PlayField;
 };
-
-#endif // !defined(AFX_COLUMNSGAME_H__2F4361A4_EE7F_11D5_B047_00E098802DF2__INCLUDED_)

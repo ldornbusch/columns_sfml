@@ -1,6 +1,4 @@
-
-#ifndef COLUMNS_GAME_CONSTANT
-#define COLUMNS_GAME_CONSTANT
+#pragma once
 
 #include "../All2DEngine/All2D/includes/gameMessages.h"
 
@@ -53,5 +51,3 @@
 #define COLUMNS_NAVIGATION_HOVER			0x0001
 
 #define MM_NAME_READY						0x1301
-
-#endif

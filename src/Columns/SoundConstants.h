@@ -1,3 +1,4 @@
+#pragma once
 // SOUNDFILES
 #define SND_FILE_0	"data\\config.wav"
 #define SND_FILE_1	"data\\credits.wav"

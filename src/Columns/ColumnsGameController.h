@@ -2,13 +2,7 @@
 // Handelt das Spiel als gesamtes:
 // Start Bildschirm, Instruktions, HighScore usw
 //////////////////////////////////////////////////////////////////////
-
-#if !defined(AFX_BALLERGAMECONTROLLER_H__42480621_C0F3_11D5_B046_00E098802DF2__INCLUDED_)
-#define AFX_BALLERGAMECONTROLLER_H__42480621_C0F3_11D5_B046_00E098802DF2__INCLUDED_
-
-#if _MSC_VER > 1000
 #pragma once
-#endif // _MSC_VER > 1000
 
 #include "../All2DEngine/All2D/AppGameController.h"
 
@@ -57,5 +51,3 @@ private:
 	ColumnsNameEditor myEditor;
 
 };
-
-#endif // !defined(AFX_BALLERGAMECONTROLLER_H__42480621_C0F3_11D5_B046_00E098802DF2__INCLUDED_)
