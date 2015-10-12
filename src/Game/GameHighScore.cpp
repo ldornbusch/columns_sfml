@@ -60,7 +60,7 @@ bool GameHighScore::paint(Image& backBuffer)
 
 int GameHighScore::getPlace(int iPts)
 {
-	if (iPts<iPoints[HIGH_SCORE_ENTRIES])
+	if (iPts<iPoints[HIGH_SCORE_ENTRIES-1])
 		return -1;	// Keine Plazierung!
 	int x=0;
 	for (; x<HIGH_SCORE_ENTRIES; x++)
