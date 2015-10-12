@@ -17,11 +17,10 @@ All2DWin::All2DWin()//, bool Fullscr ,int winWidth, int winHeight)
 	strTitle=All2D_System::WinTitle;
 	DisplayDepht = WINPLANES;	// We want to have WINPLANES Bits per Pixel
 	bReady=false;
-	bSmooth=false;
+	bSmooth=true;
 	InitWindow();	// Make the Window
 	MessageManager::setInterface(this);
 }
-
 
 void All2DWin::init()
 {
