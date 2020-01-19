@@ -26,7 +26,7 @@ ColumnsStones::ColumnsStones()
 	setOffset(0,96);	// pivot ist an der untersten kante...des untersten steines
 	srand((unsigned)All2D_System::getTime());
 	Positioner.setPosition(208,0,224,448);	// is too special we need a Rect to parametrize this
-	Positioner.initGrid(0,0,SPRITE_SIZE,SPRITE_SIZE);			
+	Positioner.initGrid(0,0,SPRITE_SIZE,SPRITE_SIZE);
 
 	blnShowPreview=true;
 	blnJoker=true;
@@ -87,7 +87,7 @@ void ColumnsStones::start()
 	iCenterColor=iNextCenterColor;
 	iLowerColor=iNextLowerColor;
 
-	if ((rand()%75==1 && iLevel>5) && blnJoker)	
+	if ((rand()%75==1 && iLevel>5) && blnJoker)
 	{
 		iNextUpperColor=COLUMNS_JOKER;
 		iNextCenterColor=COLUMNS_JOKER;
@@ -99,7 +99,7 @@ void ColumnsStones::start()
 	}
 
 	setPosition(304,0);	// This must be removed too specialized
-	iTargetXIndex=Positioner.getGridIndex(304,0).x;	// y muss ein legaler wert sein.. 
+	iTargetXIndex=Positioner.getGridIndex(304,0).x;	// y muss ein legaler wert sein..
 
 //	setPosition(3,-3);
 //	iTargetXIndex=3;
@@ -145,7 +145,7 @@ bool ColumnsStones::paint(Image& backBuffer)
 			iBltMode=IMAGE_BLTMODE_TRANS;
 		else
 			iBltMode=IMAGE_BLTMODE_ADD;
-		
+
 		drawStone(UPPER_STONE,iNextUpperColor,&imgClipImage,iBltMode);
 		drawStone(CENTER_STONE,iNextCenterColor,&imgClipImage,iBltMode);
 		drawStone(LOWER_STONE,iNextLowerColor,&imgClipImage,iBltMode);
@@ -158,8 +158,8 @@ void ColumnsStones::calculateScreenCoord()
 {
 	ScreenCoords=getPosition();
 
-	int now=All2D_System::getTime();
-	int tmp=now-getTime();
+	unsigned int now=All2D_System::getTime();
+	unsigned int tmp=now-getTime();
 
 	float fac=(float)(tmp) / getFallTime(iLevel);
 	int off=SPRITE_SIZE-1;
@@ -169,11 +169,11 @@ void ColumnsStones::calculateScreenCoord()
 		off=SPRITE_SIZE;
 
 	int iTmp=((indexPosition.y-3)*SPRITE_SIZE)+off;
-	setPosition(getPosition().x1, iTmp);	
+	setPosition(getPosition().x1, iTmp);
 }
 void ColumnsStones::restoreIndexCoord()
 {
-	setPosition(ScreenCoords.x1,ScreenCoords.y1,ScreenCoords.x2,ScreenCoords.y2);	
+	setPosition(ScreenCoords.x1,ScreenCoords.y1,ScreenCoords.x2,ScreenCoords.y2);
 }
 
 void ColumnsStones::drawStone(int iStonePosition, int iStoneColor, Image* dest, int bltMode)
@@ -259,8 +259,8 @@ int ColumnsStones::gameLogic(int iLevel)
 	if (!ptrGamePit)			// nur für alle Fälle wg. Pointers..
 		return retVal;
 
-	int now=All2D_System::getTime();
-	int tmp=now-getTime();
+	unsigned int now=All2D_System::getTime();
+	unsigned int tmp=now-getTime();
 	if (tmp>getFallTime(iLevel)||blnFallDown)
 	{
 		if (ptrGamePit->isFree(indexPosition.x, indexPosition.y+1))	// ist der naechste Frei??
@@ -279,7 +279,7 @@ int ColumnsStones::gameLogic(int iLevel)
 				retVal=COLUMNS_GAME_OVER;
 		}
 
-	} 
+	}
 	return retVal;
 }
 
@@ -339,7 +339,7 @@ void ColumnsStones::moveDown()
 	stoneSlowCounter=All2D_System::getTime();
 }
 
-int ColumnsStones::getTime()
+unsigned int ColumnsStones::getTime()
 {
 	return stoneSlowCounter;
 }
@@ -359,10 +359,10 @@ void ColumnsStones::setJoker(bool blnFlag)
 	blnJoker=blnFlag;
 }
 
-int ColumnsStones::getFallTime(int iLev)
+unsigned int ColumnsStones::getFallTime(int iLev)
 {
 	iLevel=iLev;
-	int retVal=1000;
+	unsigned int retVal=1000;
 	if (iLev<12)			// Level 1-11 : each Level 50 ms faster
 	{
 		retVal=1000-iLev*50;

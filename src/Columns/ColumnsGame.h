@@ -47,7 +47,7 @@ private:
 	int iOldGameState;
 	int iPoints;
 	int iLevel;
-	long iLevelTime;
+	unsigned int iLevelTime;
 	ImageText ScoreFont;
 	ColumnsStones activeStone;
 	ColumnsPit Pit;

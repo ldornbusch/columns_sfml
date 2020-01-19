@@ -11,6 +11,7 @@
 #include "../All2DEngine/All2D/All2D_Base/Image.h"	// Hinzugefügt von der Klassenansicht
 #include "..\ALL2DENGINE\UTILS\POINT.H"	// Added by ClassView
 
+//TODO: make enum out of this
 #define	UPPER_STONE		0x0001
 #define	CENTER_STONE	0x0002
 #define	LOWER_STONE		0x0003
@@ -22,10 +23,10 @@ public:
 	int gameLogic(int iLevel);
 	void setPit(GamePit* ptrPit);
 	bool isJoker();
-	int getFallTime(int iLev);
+	unsigned int getFallTime(int iLev);
 	void setJoker(bool blnFlag);
 	void setPreview(bool blnFlag);
-	int getTime();
+	unsigned int getTime();
 	void moveDown();
 	Point getGridPosition();
 	bool handleEvent(Event* evt);
@@ -40,7 +41,7 @@ public:
 	Point indexPosition;
 
 private:
-	int iButtonTime;
+	unsigned int iButtonTime;
 	void calculateScreenCoord();
 	void restoreIndexCoord();
 	void moveToTarget();
@@ -48,7 +49,7 @@ private:
 	void drawStone(int iStonePosition, int iStoneColor, Image* dest=NULL, int bltMode=IMAGE_BLTMODE_TRANS);
 	GamePit* ptrGamePit;
 	Image imgClipImage;
-	int stoneSlowCounter;
+	unsigned int stoneSlowCounter;
 	Grid Positioner;		// Can transpose the ScreenCoords into PitArray-Indexes
 	int iUpperColor;			// Color of the Stones
 	int iCenterColor;

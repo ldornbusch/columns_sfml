@@ -35,6 +35,8 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++11" />
 			<Add option="-DSFML_STATIC" />
+			<Add directory="../SFML/include" />
+			<Add directory="../_dependencies/include" />
 		</Compiler>
 		<Linker>
 			<Add library="libsfml-network-s.a" />
@@ -52,6 +54,8 @@
 			<Add library="libjpeg.a" />
 			<Add library="libopengl32.a" />
 			<Add library="libwinmm.a" />
+			<Add directory="../_dependencies/lib" />
+			<Add directory="../SFML/build/lib" />
 		</Linker>
 		<Unit filename="src/All2DEngine/All2D/All2D_Base/Image.cpp" />
 		<Unit filename="src/All2DEngine/All2D/All2D_Base/Image.h" />
@@ -63,6 +67,8 @@
 		<Unit filename="src/All2DEngine/All2D/All2D_Base/xContainer.h" />
 		<Unit filename="src/All2DEngine/All2D/All2D_Base/xElement.cpp" />
 		<Unit filename="src/All2DEngine/All2D/All2D_Base/xElement.h" />
+		<Unit filename="src/All2DEngine/All2D/All2D_Controller.cpp" />
+		<Unit filename="src/All2DEngine/All2D/All2D_Controller.h" />
 		<Unit filename="src/All2DEngine/All2D/All2D_Events/Event.cpp" />
 		<Unit filename="src/All2DEngine/All2D/All2D_Events/Event.h" />
 		<Unit filename="src/All2DEngine/All2D/All2D_Events/MessageManager.cpp" />
@@ -158,6 +164,7 @@
 		<Unit filename="src/All2DEngine/All2D/resources/DIRECTX.ICO" />
 		<Unit filename="src/All2DEngine/All2D/resources/ICON1.ICO" />
 		<Unit filename="src/All2DEngine/All2D/resources/resource.h" />
+		<Unit filename="src/All2DEngine/All2D_main.cpp" />
 		<Unit filename="src/All2DEngine/Gui/MouseMover.cpp" />
 		<Unit filename="src/All2DEngine/Gui/MouseMover.h" />
 		<Unit filename="src/All2DEngine/Gui/UIButton.cpp" />

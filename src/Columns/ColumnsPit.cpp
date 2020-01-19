@@ -34,8 +34,8 @@ bool ColumnsPit::paint(Image& backBuffer)
 
 	if (blnShowFlames)// 2Do: Use an AnimationObject...
 	{
-		static int now=0;
-		static int fire=0;
+		static unsigned int now=0;
+		static unsigned int fire=0;
 		if (All2D_System::getTime()-now>30){
 			if (++fire>6)
 				fire=0;

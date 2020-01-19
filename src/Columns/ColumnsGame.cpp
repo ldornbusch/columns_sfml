@@ -91,9 +91,9 @@ bool ColumnsGame::paint(Image& backBuffer)
 int ColumnsGame::gameLogic()
 {
 // Here will be the Logic of the game: Stone Moving, and inserting into the Pit..
-	int now=All2D_System::getTime();
-	static int iReactionTime=0;		// How long to wait before next removing/searching..is at beginning 0, when gaps found it will be set to 500 ms
-	static int iExplosionBrake=0;	// Timer for removing Gaps / Stones
+	unsigned int now=All2D_System::getTime();
+	static unsigned int iReactionTime=0;		// How long to wait before next removing/searching..is at beginning 0, when gaps found it will be set to 500 ms
+	static unsigned int iExplosionBrake=0;	// Timer for removing Gaps / Stones
 	static int iCalculatedPoints=0;
 	switch (iGameState)
 	{
@@ -196,7 +196,7 @@ int ColumnsGame::gameLogic()
 		}
 		case COLUMNS_STONE_MOVE:
 		{
-			long test=All2D_System::getTime();
+			unsigned int  test=All2D_System::getTime();
 			if (test>iLevelTime)
 				advanceLevel();
 

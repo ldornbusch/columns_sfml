@@ -82,7 +82,7 @@ bool ColumnsMorganeDefrag::paint(Image& backBuffer)
 	static int d=1970;
 	static int defragoffset=0;
 	static int fragoffset=0;
-	int tics=All2D_System::getTime();
+	unsigned int tics=All2D_System::getTime();
   // erster farbwechsel
 	if(tics-iLastTic>400&&tics-iLastTic<1000){
 		for (int x=0;x<defragoffset;x++)		// oberer Block..

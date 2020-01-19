@@ -167,7 +167,7 @@ bool ColumnsGameController::paint(Image& backBuffer)
 		break;
 	}
 	case COLUMNS_END:
-		static int iEndCount=0;
+		static unsigned int iEndCount=0;
 		if (iEndCount==0)
 			iEndCount=All2D_System::getTime();
 		if (All2D_System::getTime()-iEndCount>1200)
