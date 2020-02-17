@@ -1,22 +1,23 @@
 #pragma once
 
 char GameInstructions::CreditMessage[]=
+"         COLUMNS          "
 "                          "
-"                          "
-"       (C) 2000-2003      "
 "                          "
 "  CODED BY LUTZ DORNBUSCH "
 "    AND DANIEL VORHAUER   "
 "                          "
-"      WWW.HEXEREI.COM     "
 "                          "
+"    GFX BY JANET ALTER    "
+"    AND SABINE STRAUB     "
 "                          "
-"      OUR FUN FOR YOU     "
-"           ENJOY          "
+"     INFO@HEXEREI.NET     "
 "                          "
-"                          "
-"                          "
-"                          "
+"         [C]  BY          "
+"         HEXEREI          "
+"    SOFTWARE-CREATIONS    "
+"     WWW.HEXEREI.NET      "
 "                          "
 "                          "
 "                          " ;
+

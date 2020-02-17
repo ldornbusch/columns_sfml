@@ -13,5 +13,8 @@ char GameInstructions::HelpMessage[]=
 "EACH LEVEL TAKES 1 MINUTE "
 "SO HURRY UP...            "
 "                          "
+"HINT:                     "
+"DIAGONAL IS THE WAY TO GO "
+"                          "
 "                 GOOD LUCK"
 "                          " ;
