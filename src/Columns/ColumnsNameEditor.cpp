@@ -32,7 +32,7 @@ bool ColumnsNameEditor::paint(Image& backBuffer)
 {
 	if (blnActive)
 	{
-		char* txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:[]_@.-+*$%§!";
+		const char* txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:[]_@.-+*$%§!";
 //		backBuffer->clear();
 
 		static float blob=0;	// für das blubbern der Buchstaben...
@@ -67,7 +67,7 @@ bool ColumnsNameEditor::handleEvent(Event *evt)
 {
 	if (blnActive)
 	{
-		char* txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:[]_@.-+*$%§!";
+		const char* txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:[]_@.-+*$%§!";
 		int len=strlen(txt);
 		switch(evt->Type){
 			case MM_RIGHT:

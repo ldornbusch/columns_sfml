@@ -7,7 +7,7 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-GameMessageBox::GameMessageBox():evtYes(0,0,0), xContainer("MessageBox")
+GameMessageBox::GameMessageBox(): xContainer("MessageBox"),evtYes(0,0,0)
 {
 	isVisible=true;
 	KbdNavigator.setMaxEntry(1);

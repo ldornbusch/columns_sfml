@@ -43,7 +43,7 @@ bool ColumnsPit::paint(Image& backBuffer)
 		}
 
 		imgElements.setSrcRect(Rect(fire*32,176,32,80));
-		for (int x=0;x<vecFireStones.size();++x)
+		for (size_t x=0;x<vecFireStones.size();++x)
 		{
 			Point tmp=vecFireStones[x];
 			imgElements.show(backBuffer,tmp.x*32+208,16+(tmp.y-3)*32-48,IMAGE_BLTMODE_ADD);
@@ -135,7 +135,7 @@ bool ColumnsPit::deleteSolution()
 {
 	if (vecTripleStones.size()>0)
 	{
-		for (int x=0;x<vecTripleStones.size();x++)
+		for (size_t x=0;x<vecTripleStones.size();x++)
 		{
 			Point tmp=vecTripleStones[x];
 			setStone(tmp.x,tmp.y,0);
@@ -207,7 +207,7 @@ int ColumnsPit::searchJoker()
 				setStone(x,y,0);// der Joker wird als Punkte nicht gezählt
 		}
 // Clear the Stones
-	for (int x=0;x<vecTripleStones.size();x++)
+	for (size_t x=0;x<vecTripleStones.size();x++)
 	{
 		Point tmp=vecTripleStones[x];
 		setStone(tmp.x, tmp.y,0);

@@ -41,5 +41,5 @@ bool ColumnsMouseMover::paint(Image& backBuffer)
 	bool retVal=true;
 	if (blnVisible)
 		retVal=MouseMover::paint(backBuffer);
-	return true;
+	return retVal;
 }

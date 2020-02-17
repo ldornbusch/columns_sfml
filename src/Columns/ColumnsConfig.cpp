@@ -301,16 +301,16 @@ void ColumnsConfig::load()
 	FILE* fConf=fopen("data\\set.bin","rb");
 	if (fConf){
 		int i;
-		fscanf(fConf,"%ld\n",&i);
+		fscanf(fConf,"%d\n",&i);
 		blnFullscreen=(i==1)?true:false;
 
-		fscanf(fConf,"%ld\n",&i);
+		fscanf(fConf,"%d\n",&i);
 		blnPreview=(i==1)?true:false;
 
-		fscanf(fConf,"%ld\n",&i);
+		fscanf(fConf,"%d\n",&i);
 		blnJoker=(i==1)?true:false;
 
-		fscanf(fConf,"%ld\n",&i);
+		fscanf(fConf,"%d\n",&i);
 		blnShowFlakes=(i==1)?true:false;
 
 		Event tmp(0,0,0);
@@ -383,7 +383,7 @@ void ColumnsConfig::save()
 // (false) if Event is unchanged
 bool ColumnsConfig::transformEvent(Event *evt)
 {
-	int oldType=evt->Type;
+	unsigned int oldType=evt->Type;
 
 	if (!blnInRecordMode)
 	{

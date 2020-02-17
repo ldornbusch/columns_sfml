@@ -286,8 +286,6 @@ int ColumnsStones::gameLogic(int iLevel)
 // Here the stones will be dropped...and inserted into the Pit
 void ColumnsStones::layDownStones()
 {
-	int pts=0, multiplier=0;
-
 	if (!ptrGamePit)
 		return;
 	if (ptrGamePit->isFree(indexPosition.x, indexPosition.y))
