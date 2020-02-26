@@ -4,7 +4,7 @@
 
 #include "ColumnsGame.h"
 #include "ColumnsConstants.h"
-#include "../All2Dengine/All2D/All2D_Events/MessageManager.h"
+#include "../All2DEngine/All2D/All2D_Events/MessageManager.h"
 #include <math.h>
 
 //////////////////////////////////////////////////////////////////////
@@ -253,17 +253,17 @@ bool ColumnsGame::handleEvent(Event *evt)
 void ColumnsGame::displayScore(Image& backBuffer)
 {
 	char strTemp[20];
-	wsprintf(strTemp,"%07d", iPoints);
+	sprintf(strTemp,"%07d", iPoints);
 	ScoreFont.PrintAt(backBuffer,208,17,strTemp,IMAGE_BLTMODE_HALF);
 	if (iAddPoints>0)
 	{
-		wsprintf(strTemp,"%03d", iAddPoints);
+		sprintf(strTemp,"%03d", iAddPoints);
 		ScoreFont.PrintAt(backBuffer,336,49,strTemp,IMAGE_BLTMODE_HALF);
 	}
 
 	if (iAddMultiplier>1)
 	{
-		wsprintf(strTemp,"x%d", iAddMultiplier);
+		sprintf(strTemp,"x%d", iAddMultiplier);
 		ScoreFont.PrintAt(backBuffer,432,49,strTemp,IMAGE_BLTMODE_HALF);
 	}
 
@@ -274,7 +274,7 @@ void ColumnsGame::displayScore(Image& backBuffer)
 	imgElements.show(backBuffer,464,32-xs/2,64,xs,IMAGE_BLTMODE_TRANS);
 
 
-	wsprintf(strTemp,"%d", iLevel);
+	sprintf(strTemp,"%d", iLevel);
 	if ((iLevel)<10)
 		ScoreFont.PrintAt(backBuffer,479,17,strTemp,IMAGE_BLTMODE_ADD);
 	else

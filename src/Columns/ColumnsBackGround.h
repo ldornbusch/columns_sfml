@@ -5,7 +5,7 @@
 
 #include "../All2DEngine/All2D/All2D_Sprites/UISprite.h"
 #include "../All2DEngine/All2D/All2D_Base/Image.h"	// Hinzugefügt von der Klassenansicht
-#include "../game/GameImageCloner.h"
+#include "../Game/GameImageCloner.h"
 
 class ColumnsBackGround :	public UISprite  ,
 							public  GameImageCloner

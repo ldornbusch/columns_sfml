@@ -4,7 +4,7 @@
 
 #include "ColumnsNameEditor.h"
 #include "ColumnsConstants.h"
-#include "../All2Dengine/All2D/All2D_Events/MessageManager.h"
+#include "../All2DEngine/All2D/All2D_Events/MessageManager.h"
 #include <math.h>
 //////////////////////////////////////////////////////////////////////
 // Konstruktion/Destruktion

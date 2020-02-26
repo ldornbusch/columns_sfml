@@ -3,10 +3,10 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include <String>
+#include <string>
 
-#include "../ALL2DENGINE\ALL2D\ALL2D_SPRITES\UIElement.h"
-#include "../game/GameImageCloner.h"
+#include "../Game/GameImageCloner.h"
+#include "../All2DEngine/All2D/All2D_Sprites/UIElement.h"
 #include "../All2DEngine/All2D/All2D_Base/ImageText.h"	// Hinzugefügt von der Klassenansicht
 
 class ColumnsNameEditor :

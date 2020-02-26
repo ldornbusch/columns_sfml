@@ -5,8 +5,8 @@
 
 #include "ColumnsConfig.h"
 #include "ColumnsConstants.h"
-#include "../All2Dengine/All2D/All2D_Events/MessageManager.h"
-#include "../All2Dengine/All2D/All2D_System.h"
+#include "../All2DEngine/All2D/All2D_Events/MessageManager.h"
+#include "../All2DEngine/All2D/All2D_System.h"
 
 #define COL1_XOFF 114
 #define COL2_XOFF 310
@@ -204,7 +204,8 @@ bool ColumnsConfig::handleEvent(Event *evt)
 				{
 				char a=(char)evt->wData;
 				switch (a) {
-					case VK_RETURN:
+					//case VK_RETURN:
+					case sf::Keyboard::Return:
 						menuSelect();
 						evt->Type=MM_NO_EVENT;// Damit das Keydown-Event nicht von jemand anderem nochmals behandelt wird..(direkt aufgenommen z.B)
 							break;

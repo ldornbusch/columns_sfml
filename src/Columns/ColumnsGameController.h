@@ -5,18 +5,17 @@
 #pragma once
 
 #include "../All2DEngine/All2D/AppGameController.h"
-
-#include "ColumnsGame.h"
-#include "../game/GameHighScore.h"
-#include "../game/GameInstructions.h"
 #include "../All2DEngine/All2D/All2D_Base/ImageText.h"
+#include "../Game/GameMessageBox.h"
+#include "../Game/GameHighScore.h"
+#include "../Game/GameInstructions.h"
+#include "ColumnsGame.h"
 #include "ColumnsNavigation.h"
 #include "ColumnsMouseMover.h"
 #include "ColumnsConfig.h"
 #include "ColumnsNameEditor.h"
+#include "ColumnsBlase.h"
 #include "ColumnsMorganeDefrag.h"
-#include "..\GAME\GameMessageBox.h"	// Added by ClassView
-#include "ColumnsBlase.h"	// Added by ClassView
 
 class ColumnsGameController : public AppGameController
 {

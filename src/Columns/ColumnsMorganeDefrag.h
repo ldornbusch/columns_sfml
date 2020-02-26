@@ -3,8 +3,8 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "..\GAME\GameBossScreen.h"
-#include "..\ALL2DENGINE\ALL2D\All2D_System.h"
+#include "../Game/GameBossScreen.h"
+#include "../All2DEngine/All2D/All2D_System.h"
 
 class ColumnsMorganeDefrag : public GameBossScreen
 {

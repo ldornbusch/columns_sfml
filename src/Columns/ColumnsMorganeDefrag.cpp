@@ -4,7 +4,6 @@
 
 #include "ColumnsMorganeDefrag.h"
 #include "time.h"
-#include <windows.h>
 static int cols[]={0x0000,0xf800,0xffc0,0x07c0,0x07ff,0x001f,0xf91f,0xffff,0xffff};
 
 //////////////////////////////////////////////////////////////////////

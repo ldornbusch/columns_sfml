@@ -8,9 +8,6 @@
 #include "All2D_Sprites/SpriteManager.h"	// Hinzugefügt von der Klassenansicht
 #include "All2D_Base/ImageText.h"
 #include "All2D_Sound/SoundFactory.h"
-#include "..\Utils\CDebug.h"	// Added by ClassView
-#include "..\Utils\NativeTest.h"	// Added by ClassView
-#include "..\Utils\xRegistry.h"
 
 typedef enum tagRENDERMODES {
 	ALL2D,
@@ -30,7 +27,6 @@ public:
 	static int fixedX;				// Auflösung in X-Richtung
 	static int fixedY;				// Auflösung in Y-Richtung
 	static bool fullScreen;			// fullscreen oder windowed mode
-	static CDebug Debug;			// DebugObject fuer DebugAusgaben
 
 	static SpriteManager spriteManager;
 
@@ -39,8 +35,6 @@ public:
 	static string WinTitle;
 
 	static string dataPath(string szFile="");
-
-	static xRegistry Registry;
 
 	static Image UIElements;
 	static ImageText SystemFont;

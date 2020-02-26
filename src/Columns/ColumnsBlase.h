@@ -3,9 +3,9 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "..\GAME\GameImageCloner.h"
-#include "..\ALL2DENGINE\ALL2D\ALL2D_SPRITES\UIMovableSprite.h"
+#include "../Game/GameImageCloner.h"
 
+#include "../All2DEngine/All2D/All2D_Sprites/UIMovableSprite.h"
 class ColumnsBlase :
 	public UIMovableSprite,
 	public GameImageCloner

@@ -3,13 +3,12 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "../game/GameImageCloner.h"
+#include "../Game/GameImageCloner.h"
 #include "../Game/GameStone.h"
 #include "../Game/GamePit.h"
-#include "../All2DEngine/UTILS\Grid.h"	// Hinzugefügt von der Klassenansicht
-#include "../All2DEngine/UTILS\Point.h"	// Hinzugefügt von der Klassenansicht
-#include "../All2DEngine/All2D/All2D_Base/Image.h"	// Hinzugefügt von der Klassenansicht
-#include "..\ALL2DENGINE\UTILS\POINT.H"	// Added by ClassView
+#include "../All2DEngine/Utils/Grid.h"
+#include "../All2DEngine/Utils/Point.h"
+#include "../All2DEngine/All2D/All2D_Base/Image.h"
 
 //TODO: make enum out of this
 #define	UPPER_STONE		0x0001

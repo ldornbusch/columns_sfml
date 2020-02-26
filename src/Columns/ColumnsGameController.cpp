@@ -5,9 +5,9 @@
 // 020308 DAV: added standard sound engine
 //////////////////////////////////////////////////////////////////////
 
-#include "ColumnsGameController.h"
 #include "../All2DEngine/All2D/All2D_System.h"
-#include "../All2Dengine/All2D/All2D_Events/MessageManager.h"
+#include "../All2DEngine/All2D/All2D_Events/MessageManager.h"
+#include "ColumnsGameController.h"
 #include "ColumnsConstants.h"
 #define BLASEN_ANZAHL 55
 #define BLASEN_ANZAHL_SMALL  40

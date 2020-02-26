@@ -1,15 +1,15 @@
 // GameMessageClass.h: interface for the GameMessageClass class.
 //
 //////////////////////////////////////////////////////////////////////
-#include "..\ALL2DENGINE\ALL2D\ALL2D_BASE\Image.h"	// Added by ClassView
 #pragma once
 
+#include "../All2DEngine/All2D/All2D_Events/Event.h"	// Added by ClassView
+#include "../All2DEngine/All2D/All2D_Base/ImageText.h"	// Added by ClassView
+#include "../All2DEngine/All2D/All2D_Base/Image.h"	// Added by ClassView
 #include "../All2DEngine/All2D/All2D_Base/xContainer.h"
-#include "GameImageCloner.h"
-#include "..\ALL2DENGINE\GUI\UIHoverButton.h"	// Added by ClassView
-#include "..\ALL2DENGINE\ALL2D\ALL2D_EVENTS\Event.h"	// Added by ClassView
-#include "..\ALL2DENGINE\ALL2D\ALL2D_BASE\ImageText.h"	// Added by ClassView
+#include "../All2DEngine/Gui/UIHoverButton.h"	// Added by ClassView
 #include "KeyboardNavigator.h"	// Added by ClassView
+#include "GameImageCloner.h"
 
 class GameMessageBox :
 	public xContainer,

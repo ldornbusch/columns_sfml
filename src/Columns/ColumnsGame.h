@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "../game/GameImageCloner.h"
+#include "../Game/GameImageCloner.h"
 #include "../All2DEngine/All2D/All2D_Sprites/UIElement.h"
 #include "../All2DEngine/All2D/All2D_System.h"
 

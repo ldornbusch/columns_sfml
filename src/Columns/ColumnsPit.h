@@ -4,8 +4,8 @@
 #pragma once
 
 #include "../Game/GamePit.h"	// Hinzugefügt von der Klassenansicht
+#include "../Game/GameImageCloner.h"
 #include "ColumnsStones.h"
-#include "../game/GameImageCloner.h"
 
 #define COL_PITWIDTH	 7
 #define COL_PITHEIGHT	17

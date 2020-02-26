@@ -10,7 +10,7 @@
 //	See jpegfile.h for usage.
 //
 ////////////////////////////////////////////////////////////
-#include "jpegfile.h"
+#include "JpegFile.h"
 
 #include <stdio.h>
 #include <string.h>

@@ -3,8 +3,8 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "..\ALL2DENGINE\GUI\MouseMover.h"
-#include "../game/GameImageCloner.h"
+#include "../All2DEngine/Gui/MouseMover.h"
+#include "../Game/GameImageCloner.h"
 
 class ColumnsMouseMover :	public MouseMover  ,
 							public  GameImageCloner
