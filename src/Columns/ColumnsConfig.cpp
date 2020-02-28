@@ -268,7 +268,7 @@ void ColumnsConfig::menuSelect()
 //sets up Basic configurations
 void ColumnsConfig::reset()
 {
-	blnFullscreen=true;
+	blnFullscreen=false;
 	blnPreview=true;
 	blnJoker=true;
 	blnShowFlakes=true;
@@ -299,7 +299,7 @@ void ColumnsConfig::reset()
 void ColumnsConfig::load()
 {
 	reset();
-	FILE* fConf=fopen("data\\set.bin","rb");
+	FILE* fConf=fopen("data/set.bin","rb");
 	if (fConf){
 		int i;
 		fscanf(fConf,"%d\n",&i);

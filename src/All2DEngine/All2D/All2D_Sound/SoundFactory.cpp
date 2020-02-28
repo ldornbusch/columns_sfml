@@ -12,7 +12,7 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-SoundEngine* SoundFactory::singletonInstance=NULL;
+SoundEngine* SoundFactory::singletonInstance=0;
 
 SoundFactory::SoundFactory()
 {
@@ -29,7 +29,7 @@ SoundFactory::~SoundFactory()
 SoundEngine* SoundFactory::getInstance(int driverID)
 {
 	// check if we have an instance
-	if (singletonInstance==NULL) {
+	if (singletonInstance==0) {
 		// create new instance depending on capabilities
 		switch (driverID) {
 		case 3:

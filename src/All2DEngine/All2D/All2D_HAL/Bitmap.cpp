@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <memory.h>
 #include <math.h>
+#include <stdint.h>
 
 #include <SFML/Graphics.hpp>
 
@@ -155,7 +156,7 @@ int inline CBitMap::ABS(int arg)
 
 BYTE CBitMap::GetC(FILE* stream)
 {
-	static __int64_t Offset;
+	static unsigned long long Offset;
 	Offset++;
 	return getc(stream);
 }

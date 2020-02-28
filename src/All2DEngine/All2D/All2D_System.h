@@ -8,7 +8,7 @@
 #include "All2D_Sprites/SpriteManager.h"	// Hinzugefügt von der Klassenansicht
 #include "All2D_Base/ImageText.h"
 #include "All2D_Sound/SoundFactory.h"
-
+#include <SFML/System/Clock.hpp>
 typedef enum tagRENDERMODES {
 	ALL2D,
 	OPENGL,
@@ -40,6 +40,6 @@ public:
 	static ImageText SystemFont;
 
 	static string loadPath;
-
+    static sf::Clock Timer;
 private:
 };
