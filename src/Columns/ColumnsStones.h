@@ -3,12 +3,12 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
+#include <All2D/All2DEngine/Utils/Grid.h>
+#include <All2D/All2DEngine/Utils/Point.h>
+#include <All2D/All2DEngine/All2D/All2D_Base/Image.h>
 #include "../Game/GameImageCloner.h"
 #include "../Game/GameStone.h"
 #include "../Game/GamePit.h"
-#include "../All2DEngine/Utils/Grid.h"
-#include "../All2DEngine/Utils/Point.h"
-#include "../All2DEngine/All2D/All2D_Base/Image.h"
 
 //TODO: make enum out of this
 #define	UPPER_STONE		0x0001

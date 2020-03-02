@@ -3,10 +3,10 @@
 //////////////////////////////////////////////////////////////////////
 
 
+#include <All2D/All2DEngine/All2D/All2D_Events/MessageManager.h>
+#include <All2D/All2DEngine/All2D/All2D_System.h>
 #include "ColumnsConfig.h"
 #include "ColumnsConstants.h"
-#include "../All2DEngine/All2D/All2D_Events/MessageManager.h"
-#include "../All2DEngine/All2D/All2D_System.h"
 
 #define COL1_XOFF 114
 #define COL2_XOFF 310

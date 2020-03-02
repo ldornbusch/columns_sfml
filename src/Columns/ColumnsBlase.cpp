@@ -2,9 +2,9 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "ColumnsBlase.h"
 #include <math.h>
-#include "../All2DEngine/All2D/All2D_System.h"
+#include <All2D/All2DEngine/All2D/All2D_System.h>
+#include "ColumnsBlase.h"
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -37,7 +37,7 @@ bool ColumnsBlase::paint(Image& backBuffer)
 		check4NewRound();
 
 	if (updatePosition()){
-		setVisible(false);	
+		setVisible(false);
 	}
 
 	static int alpha=0;
@@ -45,7 +45,7 @@ bool ColumnsBlase::paint(Image& backBuffer)
 	int tmp=xCoordinate+iAmplitude*sin(double(++alpha)*dSwing);
 	setPosition(tmp);
 	return UIMovableSprite::paint(backBuffer);
-}	
+}
 
 void ColumnsBlase::check4NewRound()
 {

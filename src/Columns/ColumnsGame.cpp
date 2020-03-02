@@ -2,10 +2,11 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "ColumnsGame.h"
-#include "ColumnsConstants.h"
-#include "../All2DEngine/All2D/All2D_Events/MessageManager.h"
 #include <math.h>
+#include <All2D/All2DEngine/All2D/All2D_Events/MessageManager.h>
+#include "ColumnsConstants.h"
+#include "ColumnsGame.h"
+
 
 //////////////////////////////////////////////////////////////////////
 // Konstruktion/Destruktion

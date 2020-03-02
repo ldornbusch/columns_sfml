@@ -3,15 +3,15 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
+#include <All2D/All2DEngine/All2D/All2D_Sprites/UIElement.h>
+#include <All2D/All2DEngine/All2D/All2D_System.h>
+#include <All2D/All2DEngine/All2D/All2D_Base/ImageText.h>
+
+
 #include "../Game/GameImageCloner.h"
-#include "../All2DEngine/All2D/All2D_Sprites/UIElement.h"
-#include "../All2DEngine/All2D/All2D_System.h"
-
-
-#include "ColumnsBackGround.h"	// Hinzugefügt von der Klassenansicht
+#include "ColumnsBackGround.h"
 #include "ColumnsStones.h"
 #include "ColumnsPit.h"
-#include "../All2DEngine/All2D/All2D_Base/ImageText.h"	// Hinzugefügt von der Klassenansicht
 
 // sound engine
 // initialization is in game controller init

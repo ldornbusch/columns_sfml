@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../All2DEngine/All2D/includes/gameMessages.h"
+#include <All2D/All2DEngine/All2D/includes/gameMessages.h>
 
 #define COLUMNS_APP_TITLE							0x0001
 #define COLUMNS_APP_GAME							0x0002

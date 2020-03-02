@@ -7,10 +7,10 @@
 // Both CoordinateSystems should not be touched from outside..
 //////////////////////////////////////////////////////////////////////
 
-#include "ColumnsStones.h"
-#include "ColumnsConstants.h"
+#include <All2D/All2DEngine/All2D/All2D_System.h>
 #include "SoundConstants.h"
-#include "../All2DEngine/All2D/All2D_System.h"
+#include "ColumnsConstants.h"
+#include "ColumnsStones.h"
 
 #define SPRITE_SIZE		32
 #define SPRITE_COLORS	 6

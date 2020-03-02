@@ -5,9 +5,9 @@
 
 #include <string>
 
+#include <All2D/All2DEngine/All2D/All2D_Sprites/UIElement.h>
+#include <All2D/All2DEngine/All2D/All2D_Base/ImageText.h>
 #include "../Game/GameImageCloner.h"
-#include "../All2DEngine/All2D/All2D_Sprites/UIElement.h"
-#include "../All2DEngine/All2D/All2D_Base/ImageText.h"	// Hinzugefügt von der Klassenansicht
 
 class ColumnsNameEditor :
 	public UIElement,

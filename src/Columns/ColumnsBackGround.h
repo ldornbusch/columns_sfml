@@ -3,8 +3,8 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "../All2DEngine/All2D/All2D_Sprites/UISprite.h"
-#include "../All2DEngine/All2D/All2D_Base/Image.h"	// Hinzugefügt von der Klassenansicht
+#include <All2D/All2DEngine/All2D/All2D_Sprites/UISprite.h>
+#include <All2D/All2DEngine/All2D/All2D_Base/Image.h>
 #include "../Game/GameImageCloner.h"
 
 class ColumnsBackGround :	public UISprite  ,

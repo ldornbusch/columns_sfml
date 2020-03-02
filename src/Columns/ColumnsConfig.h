@@ -4,13 +4,13 @@
 #pragma once
 
 
-#include "../All2DEngine/All2D/All2D_Base/Image.h"	// Added by ClassView
-#include "../All2DEngine/All2D/All2D_Base/ImageText.h"	// Hinzugefügt von der Klassenansicht
-#include "../All2DEngine/All2D/All2D_Base/xContainer.h"
+#include <All2D/All2DEngine/All2D/All2D_Base/Image.h>
+#include <All2D/All2DEngine/All2D/All2D_Base/ImageText.h>
+#include <All2D/All2DEngine/All2D/All2D_Base/xContainer.h>
+#include <All2D/All2DEngine/Gui/UIButton.h>
+#include <All2D/All2DEngine/Gui/UIKeyRecorder.h>
 #include "../Game/GameImageCloner.h"
-#include "../Game/KeyboardNavigator.h"	// Added by ClassView
-#include "../All2DEngine/Gui/UIButton.h"	// Hinzugefügt von der Klassenansicht
-#include "../All2DEngine/Gui/UIKeyRecorder.h"	// Hinzugefügt von der Klassenansicht
+#include "../Game/KeyboardNavigator.h"
 
 class ColumnsConfig :
 	public xContainer,

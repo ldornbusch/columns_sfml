@@ -2,9 +2,9 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "ColumnsPit.h"
+#include <All2D/All2DEngine/All2D/All2D_System.h>
 #include "ColumnsConstants.h"
-#include "../All2DEngine/All2D/All2D_System.h"
+#include "ColumnsPit.h"
 
 //////////////////////////////////////////////////////////////////////
 // Konstruktion/Destruktion

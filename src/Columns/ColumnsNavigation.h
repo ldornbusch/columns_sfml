@@ -3,10 +3,11 @@
 //////////////////////////////////////////////////////////////////////
 #pragma once
 
-#include "../Game/KeyboardNavigator.h"	// Added by ClassView
+
+#include <All2D/All2DEngine/All2D/All2D_Base/xContainer.h>
+#include <All2D/All2DEngine/Gui/UIHoverButton.h>
+#include "../Game/KeyboardNavigator.h"
 #include "../Game/GameImageCloner.h"
-#include "../All2DEngine/All2D/All2D_Base/xContainer.h"
-#include "../All2DEngine/Gui/UIHoverButton.h"	// Hinzugefügt von der Klassenansicht
 
 class ColumnsNavigation :
 	public xContainer,
