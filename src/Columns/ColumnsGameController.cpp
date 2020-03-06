@@ -57,6 +57,10 @@ void ColumnsGameController::init()
 	All2D_System::sound->loadSample(SND_FILE_16);
 	All2D_System::sound->loadSample(SND_FILE_17);
 
+	Music* m=All2D_System::sound->loadMusic(MUSIC_BACK);
+	m->setVolume(18);
+	m->loop();
+
 	// load the total ressource image
 	imgGFXElements.loadImage("data/elements.png");
 	Image imgTmp;
@@ -183,7 +187,7 @@ bool ColumnsGameController::paint(Image& backBuffer)
 		switch(iLayerState)
 		{
 		case COLUMNS_LAYER_INSTRUCTIONS:
-			imgBackground.show(backBuffer,60,150,520,300,IMAGE_BLTMODE_HALF);
+			imgBackground.show(backBuffer,60,55,520,360,IMAGE_BLTMODE_HALF);
 			myInstructions.setCredit(false);
 			myInstructions.paint(backBuffer);
 			break;
@@ -192,12 +196,12 @@ bool ColumnsGameController::paint(Image& backBuffer)
 			myConfig.paint(backBuffer);
 			break;
 		case COLUMNS_LAYER_CREDITS:
-			imgBackground.show(backBuffer,60,150,520,300,IMAGE_BLTMODE_HALF);
+			imgBackground.show(backBuffer,60,55,520,360,IMAGE_BLTMODE_HALF);
 			myInstructions.setCredit(true);
 			myInstructions.paint(backBuffer);
 			break;
 		case COLUMNS_LAYER_HIGH_SCORE:
-			//imgBackground.show(backBuffer,60,95,520,410,IMAGE_BLTMODE_HALF);
+			imgBackground.show(backBuffer,60,55,520,410,IMAGE_BLTMODE_HALF);
 			highScore.paint(backBuffer);
 			break;
 		case COLUMNS_LAYER_MENU:

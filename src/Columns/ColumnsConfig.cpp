@@ -351,7 +351,7 @@ void ColumnsConfig::load()
 // saves the ConfigParameters
 void ColumnsConfig::save()
 {
-	FILE* fConf=fopen("data\\set.bin","wb");
+	FILE* fConf=fopen("data/set.bin","wb");
 	fprintf(fConf,"%d\n",blnFullscreen?1:0);
 	fprintf(fConf,"%d\n",blnPreview?1:0);
 	fprintf(fConf,"%d\n",blnJoker?1:0);

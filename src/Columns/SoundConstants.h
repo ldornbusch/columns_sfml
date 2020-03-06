@@ -18,6 +18,7 @@
 #define SND_FILE_15	"data/match5.wav"
 #define SND_FILE_16	"data/match6.wav"
 #define SND_FILE_17	"data/match7.wav"
+#define MUSIC_BACK	"data/background.ogg"
 
 
 
