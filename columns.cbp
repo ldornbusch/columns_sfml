@@ -118,10 +118,10 @@
 		<Unit filename="src/Game/KeyboardNavigator.cpp" />
 		<Unit filename="src/Game/KeyboardNavigator.h" />
 		<Unit filename="src/Game/helpText.h" />
+		<Unit filename="src/res/icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
